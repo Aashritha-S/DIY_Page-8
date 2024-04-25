@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crafty DIY Corner</title>
+  <style>
+    /* Set colorful background with a gradient */
+    body {
+      background: linear-gradient(to right, #f0f8ff, #e6f7fb);
+      font-family: Arial, sans-serif;
+      margin: 0; /* Remove default body margin for better layout */
+    }
+    /* Style the colorful header with a larger font */
+    header {
+      background-color: #ffc1cc;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    /* Style the navigation links with hover effects */
+    header a {
+      text-decoration: none;
+      color: black;
+      margin-right: 20px;
+      font-size: 1.2em;
+      transition: all 0.3s ease;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    /* Highlight the active link with a different color */
+    header a.active {
+      font-weight: bold;
+      color: #f08080;
+    }
+    /* Style the product dropdown with a border and hover effect */
+    .product-dropdown {
+      display: inline-block;
+    }
+    .product-dropdown select {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .product-dropdown select:hover {
+      border-color: #f08080;
+    }
+    /* Main content area with some padding */
+    main {
+      padding: 40px;
+    }
+    /* Style for DIY examples (craft blocks) with rounded corners and box shadow */
+    .diy-example {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .diy-example img {
+      width: 100%;
+      max-width: 300px;
+    }
+    .diy-example h3 {
+      margin-top: 0;
+    }
+    /* Style for blog entries */
+    .blog-entry {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .blog-entry img {
+      width: 150px;
+      margin-right: 20px;
+    }
+    .blog-entry .content {
+      flex: 1;
+    }
+    .blog-entry .content h3 {
+      margin-top: 0;
+    }
+    /* Style for feedback form */
+    footer {
+      padding: 20px;
+      text-align: center;
+    }
+    footer form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    footer label {
+      margin-bottom: 5px;
+    }
+    footer input, footer textarea {
+      padding: 10px;
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer button {
+      
+      background-color: #f08080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    footer button:hover {
+      background-color: #d74b4b;
+    }
+    /* Add media query for responsive design (example) */
+    @media (max-width: 768px) {
+      .diy-example, .blog-entry {
+        flex-direction: column;
+        align-items: center;
+      }
+      .blog-entry img {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Crafty DIY Corner</h1>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">Products</a>
+      <div class="product-dropdown">
+        <select>
+          <option value="paper">Paper</option>
+          <option value="plastic">Plastic</option>
+          <option value="recycle">Recycle</option>
+          <option value="paint">Paint</option>
+          <option value="thread">Thread</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2>DIY Examples</h2>
+    <div class="diy-example">
+      <h3>Paper Flower Bouquet (Easy & Beautiful)</h3>
+      <img src="image1.jpg" alt="A bouquet of colorful paper flowers">
+      <p>Learn how to create a beautiful and vibrant paper flower bouquet using colorful construction paper and simple techniques. Perfect for home decor or a handmade gift.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="diy-example">
+      <h3>Recycled Plastic Bottle Planter (Eco-Friendly Project)</h3>
+      <img src="image2.jpg" alt="A plastic bottle transformed into a planter">
+      <p>Transform a used plastic bottle into a charming planter for your favorite herbs or flowers. This eco-friendly DIY project is a fun way to upcycle and add a touch of green to your living space.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <h2>Explore Our Blog</h2>
+    <div class="blog-entry">
+      <img src="blog1.jpg" alt="A colorful yarn wall hanging">
+      <div class="content">
+        <h3>DIY Yarn Wall Hanging (Beginner-Friendly)</h3>
+        <p>Create a unique and textured wall hanging using colorful yarn and simple weaving techniques. This beginner-friendly project is a great way to add a touch of personality to your home.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="blog-entry">
+      <img src="blog2.jpg" alt="Painted mason jar lights">
+      <div class="content">
+        <h3>Painted Mason Jar Lights (Easy & Whimsical)</h3>
+        <p>Transform ordinary mason jars into beautiful and whimsical lights. This easy DIY project is perfect for adding a touch of ambiance to your patio or garden.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <h2>Leave your feedback!</h2>
+    <form action="#">  <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" rows="5"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p>&copy; 2024 Crafty DIY Corner</p>
+  </footer>
+</body>
+</html>
+
